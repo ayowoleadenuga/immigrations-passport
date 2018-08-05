@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Immigrations</title>
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="nav">
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="#"><img src="https://res.cloudinary.com/ayowoleadenuga/image/upload/v1533325315/NISlogo.png" alt="logo"></a>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+          <a href="#">Home</a>        
+          <a href="javascript:toggle(about)">About</a>       
+          <a href="javascript:toggle(contact)">Contact</a>
+        </div>
+      </div>
+    </div>
+    <!-- main content -->
+    <section id="homeContent" class="home hidden">
+        <div>
+            <p>Welcome to the</p>
+            <h1>Nigerian Passport</h1>
+            <h1>Service</h1>
+        </div>
+        <div>
+            <button id="applyBtn">Apply Here</button>
+            <button id="renewBtn">Renew Your Passport</button>
+        </div>
+    </section>
+
+    <!-- About us section -->
+    <section id="about" class="about hidden">
+      <div class="row">
+        <div class="title">History</div>
+        <div class="title_text">
+            The NIS has witnessed series of changes since it was extracted from the
+            Nigeria Police Force (NPF) in 1958.The Immigration Department,as it was
+            known then,was entrusted with the core immigration duties under the headship
+            of the Chief Federal Immigration Officer (CFIO) and the first to sit on that chair 
+            was in the person of Mr. EH Harrison. The department in its emergent stages
+            inherited the Immigration Ordinance of 1958 for its operation.At inception, 
+            the department had a narrow operational scope and maintained a low profile 
+            and simple approach in attaining  the desired goals and objectives of 
+            government. During this period, only the Visa and Business Sections were set up.
+        </div>
+      </div>
+      <div class="row">
+          <div class="title">Vision</div>
+          <div class="title_text">
+              To be a modern, effective and efficient Immigration Service,  manned by well trained and motivated workforce
+          </div>
+      </div>
+      <div class="row">
+          <div class="title">Mission</div>
+          <div class="title_text">
+              To strengthen the security and prosperity of Nigeria through proactive, 
+              effective and efficient border security and migration management.
+          </div>
+      </div>
+    </section>
+    
+    <!-- contact us section -->
+  <div class="contact-Us " onclick="toggle(contact)">
+    <section>
+        <div class="container">  
+            <form id="contact" action="" method="post">
+              <h4>Send us a message and we'll get back to 
+                  you within 24 hours.</h4>
+              <f
+              ieldset>
+                <input placeholder="Full name" type="text" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Email" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Message" tabindex="5" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+              </fieldset>
+            </form>
+    </section>
+        <footer>
+          <div class="container2">
+            <div id="addresss" class="address equal">
+              <p>
+                  Nigerian Immigration Service Headquarters,
+                  Nnamdi Azikiwe Airport Road ,
+                  Sauka Abuja.
+                  P.M.B. 38
+                  Garki Abuja.
+                  Website: <a href="https://www.immigration.gov.ng">www.immigration.gov.ng</a>
+              </p>
+            </div>
+            <div id="phonee" class="phone equal">
+                Contact Centre
+                Phone: +234-708-0607-900
+                Hours of Operation: 07:00 - 20:00hours (GMT+1)
+                Email: nis.servicom@nigeriaimmigration.gov.ng <br>
+                
+                Phone :+234-811-9753-844
+            </div>
+            <div class="icons equal">
+              <p>Connect with us</p>
+              <span class="icon"><a href=""><svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.43622 3.94015C4.43622 2.55922 3.9997 1.27841 3.25768 0.228078L1.65077 0L0 0.726902C1.06876 1.39855 1.78106 2.58736 1.78106 3.94015C1.78106 4.72519 1.54129 5.45527 1.13124 6.061L3.90405 6.50195C4.24566 5.71622 4.43622 4.85023 4.43622 3.94015Z" transform="translate(0.0119629 0.0598145)" fill="#FDE494"/>
+                </svg>
+                </a></span>
+                <span class="icon"><a href=""><svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.875 7.5625V4.8125C6.875 4.0535 7.491 3.4375 8.25 3.4375H9.625V0H6.875C4.59662 0 2.75 1.84663 2.75 4.125V7.5625H0V11H2.75V22H6.875V11H9.625L11 7.5625H6.875Z" fill="#FDE494"/>
+                </svg></a></span>
+               
+                <span class="icon"><a href=""><svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 2.84123C21.1819 3.32308 20.3101 3.64246 19.4012 3.79754C20.3363 3.048 21.0499 1.87015 21.3854 0.450461C20.5136 1.14831 19.5511 1.64123 18.5254 1.91631C17.6976 0.732923 16.5179 0 15.2309 0C12.7339 0 10.7236 2.72123 10.7236 6.05723C10.7236 6.53723 10.7539 6.99877 10.8281 7.43815C7.0785 7.19262 3.76063 4.77969 1.53175 1.104C1.14262 2.01046 0.914375 3.048 0.914375 4.16492C0.914375 6.26215 1.71875 8.12123 2.91775 9.19754C2.19313 9.17908 1.48225 8.89662 0.88 8.45169C0.88 8.47015 0.88 8.49415 0.88 8.51815C0.88 11.4609 2.44337 13.9052 4.4935 14.4683C4.12637 14.6031 3.72625 14.6677 3.311 14.6677C3.02225 14.6677 2.73075 14.6455 2.45712 14.5643C3.0415 16.9625 4.69975 18.7255 6.6715 18.7828C5.137 20.3945 3.18863 21.3655 1.07938 21.3655C0.7095 21.3655 0.35475 21.3434 0 21.2825C1.99787 23.0123 4.36562 24 6.919 24C15.2185 24 19.756 14.7692 19.756 6.768C19.756 6.50031 19.7491 6.24185 19.7395 5.98523C20.6346 5.13231 21.3867 4.06708 22 2.84123Z" fill="#FDE494"/>
+                  </svg></a></span>
+                                  
+                
+            </div>
+          </div>
+        </footer> 
+  </div>
+  <script type="text/javascript" src="main.js"></script>             
+</body>
+</html>
