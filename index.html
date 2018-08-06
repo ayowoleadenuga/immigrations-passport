@@ -10,24 +10,26 @@
 </head>
 <body>
     <!-- navigation bar -->
-    <div class="nav">
-        <div class="nav-header">
-          <div class="nav-title">
-            <a href="#"><img src="https://res.cloudinary.com/ayowoleadenuga/image/upload/v1533325315/NISlogo.png" alt="logo"></a>
+    <div class="map">
+      <div class="nav">
+          <div class="nav-header">
+            <div class="nav-title">
+              <a href="#"><img src="https://res.cloudinary.com/ayowoleadenuga/image/upload/v1533325315/NISlogo.png" alt="logo"></a>
+            </div>
           </div>
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <input type="checkbox" id="nav-check">
-        <div class="nav-links">
-          <a href="#" onclick="changeDisplayHome()">Home</a>        
-          <a href="#" onclick="changeDisplayAbout()">About</a>       
-          <a href="#" onclick="changeDisplayContact()">Contact</a>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <input type="checkbox" id="nav-check">
+          <div class="nav-links">
+            <a href="#" onclick="changeDisplayHome()">Home</a>        
+            <a href="#" class="abt" onclick="changeDisplayAbout(); changeBackgroundMap();">About</a>       
+            <a href="#" class="con" onclick="changeDisplayContact(); changeBackgroundBody();">Contact</a>
+          </div>
         </div>
       </div>
     </div>
@@ -76,7 +78,7 @@
     </section>
     
     <!-- contact us section -->
-  <div class="contact-Us hidden">
+  <div class="contact-Us hidden" onclick="toggle(contact)">
     <section>
         <div class="container">  
             <form id="contact" action="" method="post">
