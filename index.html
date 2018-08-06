@@ -25,14 +25,14 @@
         </div>
         <input type="checkbox" id="nav-check">
         <div class="nav-links">
-          <a href="#">Home</a>        
-          <a href="javascript:toggle(about)">About</a>       
-          <a href="javascript:toggle(contact)">Contact</a>
+          <a href="#" onclick="changeDisplayHome()">Home</a>        
+          <a href="#" onclick="changeDisplayAbout()">About</a>       
+          <a href="#" onclick="changeDisplayContact()">Contact</a>
         </div>
       </div>
     </div>
     <!-- main content -->
-    <section id="homeContent" class="home hidden">
+    <section id="homeContent" class="home show">
         <div>
             <p>Welcome to the</p>
             <h1>Nigerian Passport</h1>
@@ -76,7 +76,7 @@
     </section>
     
     <!-- contact us section -->
-  <div class="contact-Us " onclick="toggle(contact)">
+  <div class="contact-Us hidden">
     <section>
         <div class="container">  
             <form id="contact" action="" method="post">
